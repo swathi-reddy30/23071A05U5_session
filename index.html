@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+    <h2>User Login</h2>
+    <form method="post" action="LoginServlet">
+        Username: <input type="text" name="username" required><br><br>
+        Password: <input type="password" name="password" required><br><br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+Got it! Here's a detailed yet clear explanation about *Servlets*:
+
+---
+
+A *Servlet* is a Java program that runs on a web server and handles requests from web clients, usually browsers. It is a core technology in Java used to create *dynamic web applications. Servlets are part of the **Java EE (Jakarta EE)* platform and work on the *server-side* to process client requests, perform backend logic, interact with databases, and generate responses—usually in the form of HTML pages.
+
+When a user interacts with a website (like submitting a form), the browser sends an HTTP request to the server. The *Servlet* receives this request through methods like doGet() or doPost(), processes it (e.g., reading form data, querying a database), and sends back a response using the HttpServletResponse object.
+
+Servlets are typically used in combination with *HTML, CSS, and JavaScript* on the frontend. They can be deployed on a *Java servlet container* like *Apache Tomcat*, which manages the servlet lifecycle—from creation and initialization to handling requests and eventually destroying the servlet.
+
+Some key features of Servlets:
+
+* *Platform-independent*: Written in Java, so they can run on any server with a Java runtime.
+* *Efficient*: Unlike CGI, which creates a new process per request, servlets use threads to handle multiple requests within a single process.
+* *Reusable and Scalable*: Multiple clients can use the same servlet simultaneously, and code can be reused across different parts of an application.
+* *Extensible*: Servlets can be combined with technologies like JSP (JavaServer Pages) for better presentation logic.
+
+In modern Java web development, servlets are often the foundation upon which more advanced frameworks (like Spring MVC) are built.
+
+---
+
+Let me know if you want this made simpler for a report or expanded with an example use case!
